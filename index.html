@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>生活サポートキャンペーン</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      background: linear-gradient(180deg, #fff8f3 0%, #fff 40%, #fff7fb 100%);
+      color: #222;
+      line-height: 1.7;
+    }
+    .container {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .hero {
+      padding: 40px 0 28px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: #ff6b6b;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 20px rgba(255, 107, 107, 0.22);
+    }
+    h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
+      margin: 0 0 18px;
+      color: #e65179;
+    }
+    .lead-box {
+      background: #fff;
+      border-radius: 24px;
+      padding: 28px 22px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(230, 81, 121, 0.08);
+    }
+    h2 {
+      font-size: clamp(24px, 4vw, 34px);
+      margin: 0 0 10px;
+      line-height: 1.35;
+    }
+    .subtext {
+      font-size: clamp(18px, 2.8vw, 24px);
+      margin: 0 0 20px;
+      font-weight: 700;
+    }
+    .line-note {
+      margin: 12px 0 14px;
+      font-weight: 700;
+      color: #444;
+    }
+    .cta {
+      display: inline-block;
+      background: linear-gradient(135deg, #06c755, #00b94a);
+      color: #fff;
+      text-decoration: none;
+      padding: 18px 30px;
+      border-radius: 999px;
+      font-size: 18px;
+      font-weight: 800;
+      box-shadow: 0 14px 30px rgba(6, 199, 85, 0.28);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 34px rgba(6, 199, 85, 0.34);
+    }
+    .free-note {
+      margin-top: 14px;
+      color: #666;
+      font-size: 14px;
+    }
+    .steps {
+      padding: 26px 0 8px;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .step-card {
+      background: #fff;
+      border-radius: 22px;
+      padding: 24px 18px;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+    .step-number {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 14px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #ffe4ec;
+      color: #e65179;
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .step-title {
+      font-size: 22px;
+      margin-bottom: 8px;
+      font-weight: 800;
+      color: #333;
+    }
+    .step-text {
+      margin: 0;
+      color: #555;
+      font-weight: 600;
+    }
+    .section {
+      padding: 34px 0;
+    }
+    .section-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 28px 22px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+    }
+    .section-title {
+      margin: 0 0 24px;
+      text-align: center;
+      font-size: clamp(24px, 4vw, 34px);
+      color: #e65179;
+    }
+    .feature {
+      padding: 18px 0;
+      border-top: 1px solid #f1f1f1;
+    }
+    .feature:first-of-type { border-top: none; padding-top: 0; }
+    .feature h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      color: #333;
+    }
+    .feature p {
+      margin: 0;
+      color: #555;
+    }
+    .info p {
+      margin: 8px 0;
+      color: #444;
+    }
+    footer {
+      padding: 28px 0 40px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      .hero { padding-top: 28px; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .step-card, .lead-box, .section-card { border-radius: 18px; }
+      .cta { width: 100%; max-width: 360px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="badge">期間限定</div>
+      <h1>生活サポートキャンペーン</h1>
+      <div class="lead-box">
+        <h2>生活にお困りの方へ</h2>
+        <p class="subtext">ギフトをお配りしております。</p>
+        <p class="line-note">▽受け取りのお申し込みはLINEから▽</p>
+        <a class="cta" href="https://lin.ee/XXXXXXXX" target="_blank" rel="noopener noreferrer">LINEを友だち追加する</a>
+        <p class="free-note">※完全無料で受け取れます。</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="steps">
+      <div class="container">
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-title">LINE</div>
+            <p class="step-text">友だち追加</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-title">✅</div>
+            <p class="step-text">受け取り方法のご案内</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-title">ギフト</div>
+            <p class="step-text">お受け取り</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card">
+          <h2 class="section-title">✨キャンペーンの仕組み✨</h2>
+
+          <div class="feature">
+            <h3>広告収入の還元</h3>
+            <p>本キャンペーンで使用されるプラットフォームやメディアでの広告収入の一部を、配布するギフトの資金として活用しています。つまり、皆さまが普段目にしている広告が、誰かの夢を叶える原資となるのです。</p>
+          </div>
+
+          <div class="feature">
+            <h3>協賛企業からの支援</h3>
+            <p>多くの企業が本キャンペーンの趣旨に賛同し、製品やサービスを特別価格で提供してくださっています。企業の協力により、より多くの方にギフトをお届けすることが可能になりました。</p>
+          </div>
+
+          <div class="feature">
+            <h3>❤️ 社会貢献の一環</h3>
+            <p>私たちは、この取り組みを単なる懸賞企画ではなく、社会貢献活動の一つと位置付けています。利益の一部を還元することで、より多くの方々に幸せや希望をお届けしたいと考えています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card info">
+          <h2 class="section-title">〖特定商取引法に基づく表記・運営者情報〗</h2>
+          <p>・事業者名：株式会社イグアスムージー
+          <p>・所在地：〒220-2202 東京都新宿区高田439-012
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card info">
+          <h2 class="section-title">〖個人情報の取り扱いについて〗</h2>
+          <p>当サイトはお客様の個人情報を適切に保護することの重要性を認識し、法令遵守および安全な取り扱いに努めます。</p>
+          <p>取得した個人情報は、お問い合わせへの対応およびサービスのご案内にのみ利用し、法令に基づく場合を除き第三者への提供は行いません。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 プレゼント企画事務局. All rights reserved.</div>
+  </footer>
+</body>
+</html>
